@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="statystyki">
+            <div class="stats">
+                <p>GPC: <span id="gpcStats" class="zlotyTekst">1</span></p>
+                <p>GPS: <span id="gpsStats" class="zlotyTekst">0</span></p>
+            </div>
+        </div>
+        <div class="main">
+
+            <div class="zasoby">
+                <h3>Zloto <br><span class="zloto zlotyTekst">4000</span></h3>
+                <div class="zlotoImg-div">
+                    <img class="zasobyImg" src="zloto.png" onclick="zbierajZloto(event)" draggable="false">
+                </div>
+            </div>
+            <div>
+                <div class="ulepszenia" onclick="ulepszenia('kilof')">
+                   <div class="lewo">
+                       <img src="pickaxe.png" class="clickerImg">
+                    </div>
+
+                    <div class="srodek">
+                       <h4>Kilof</h4>
+                       <div class="koszt">
+                           <p class="kosztFont"><span class="kosztUlepszenia">10</span></p>
+                           <img src="zloto1.png" class="zlotoImg">
+                       </div>
+                    </div>
+
+                    <div class="prawo">
+                        Poziom <span class="poziom">0</span>
+                    </div>
+                    <div class="informacjeUlepszenia">
+                        <p>
+                            +<span class="ulepszenieZlota">1</span> zlota <br> na klikniecie
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ulepszenia" onclick="ulepszenia('lepszykilof')">
+                    <div class="lewo">
+                        <img src="pickaxe1.png" class="clickerImg">
+                     </div>
+ 
+                     <div class="srodek">
+                        <h4>Lepszy Kilof</h4>
+                        <div class="koszt">
+                            <p class="kosztFont"><span class="kosztUlepszenia1">200</span></p>
+                            <img src="zloto1.png" class="zlotoImg">
+                        </div>
+                     </div>
+ 
+                     <div class="prawo">
+                         Poziom <span class="poziom1">0</span>
+                     </div>
+                     <div class="informacjeUlepszenia">
+                         <p>
+                             +<span class="ulepszenieZlota1">5</span> zlota <br> na sekunde
+                         </p>
+                     </div>
+                 </div>
+
+                 <div class="ulepszenia" onclick="ulepszenia('pracownik')">
+                    <div class="lewo">
+                        <img src="pracownik.png" class="clickerImg">
+                     </div>
+ 
+                     <div class="srodek">
+                        <h4>Pracownik</h4>
+                        <div class="koszt">
+                            <p class="kosztFont"><span class="kosztUlepszenia2">1050</span></p>
+                            <img src="zloto1.png" class="zlotoImg">
+                        </div>
+                     </div>
+ 
+                     <div class="prawo">
+                         Poziom <span class="poziom2">0</span>
+                     </div>
+                     <div class="informacjeUlepszenia">
+                         <p>
+                             +<span class="ulepszenieZlota2">15</span> zlota <br> na sekunde
+                         </p>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+
+</body>
+</html>
